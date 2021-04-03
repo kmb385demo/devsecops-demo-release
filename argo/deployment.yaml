@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: gitops-foundations
-        image: kmb385/gitops-foundations:1.0.25
+        image: kmb385/gitops-foundations:1.0.26
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
