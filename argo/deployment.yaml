@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devsecops-demo
+  name: devsecopsdemo
   namespace: argo-demo
   labels:
-    app: devsecops-demo
+    app: devsecopsdemo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: devsecops-demo
+      app: devsecopsdemo
   template:
     metadata:
       labels:
-        app: devsecops-demo
+        app: devsecopsdemo
     spec:
       containers:
-      - name: devsecops-demo
-        image: kmb385demo/devsecops-demo:1.0.5
+      - name: devsecopsdemo
+        image: kmb385demo/devsecopsdemo:1.0.5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
