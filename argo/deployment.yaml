@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: devsecops-demo
-        image: kmb385demo/devsecops-demo:1.0.26
+        image: kmb385demo/devsecops-demo:1.0.5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
