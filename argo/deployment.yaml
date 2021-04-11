@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gitops-foundations
+  name: devsecops-demo
   namespace: argo-demo
   labels:
-    app: gitops-foundations
+    app: devsecops-demo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gitops-foundations
+      app: devsecops-demo
   template:
     metadata:
       labels:
-        app: gitops-foundations
+        app: devsecops-demo
     spec:
       containers:
-      - name: gitops-foundations
-        image: kmb385/gitops-foundations:1.0.26
+      - name: devsecops-demo
+        image: kmb385demo/devsecops-demo:1.0.26
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
